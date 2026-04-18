@@ -2,7 +2,7 @@ import requests             # brings in the library that lets you make web reque
 
 print("=== Sports Stats Tracker CLI ===")
 
-search_input = input("Do you want to enter a player or a team?: ")
+search_input = input("Do you want to enter a player or a team?: ").lower()
 name = input("Enter a name: ")
 
 print(f"You selected: {search_input}" )
