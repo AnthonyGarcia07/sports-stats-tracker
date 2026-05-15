@@ -27,10 +27,12 @@ if search_input == "player":
     if players is None:
         print("That player doesn't exist in this api")
     else:
-        print(players[0]["strPlayer"])
-        print(players[0]["strTeam"])
-        print(players[0]["strSport"])
-        print(players[0]["strNationality"])
+        # added f strings and more print statements to make it look more presentable
+        print("=== Player Found ===")
+        print(f"Name:        {players[0]["strPlayer"]}")
+        print(f"Team:        {players[0]["strTeam"]}")
+        print(f"Sport:       {players[0]["strSport"]}")
+        print(f"Nationality: {players[0]["strNationality"]}")
 
 # elif conditonal checking for a team
 elif search_input == "team":
@@ -50,10 +52,13 @@ elif search_input == "team":
     if teams is None:
         print("That team doesn't exist in this api")
     else:
-        print(teams[0]["strTeam"])
-        print(teams[0]["strSport"])
-        print(teams[0]["strLeague"])
-        print(teams[0]["strStadium"])
+        # added f strings and more print statements to make it look more presentable
+        print("=== Team Found ===")
+        print(f"Team Name:       {teams[0]["strTeam"]}")
+        print(f"Sport:           {teams[0]["strSport"]}")
+        print(f"League:          {teams[0]["strLeague"]}")
+        print(f"Stadium:         {teams[0]["strStadium"]}")
 
+# prints invalid search input if search input is not "player" or "team"
 else:
     print("Invalid Search Input")
