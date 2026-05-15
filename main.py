@@ -54,3 +54,6 @@ elif search_input == "team":
         print(teams[0]["strSport"])
         print(teams[0]["strLeague"])
         print(teams[0]["strStadium"])
+
+else:
+    print("Invalid Search Input")
