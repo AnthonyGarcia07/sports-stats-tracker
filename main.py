@@ -65,7 +65,8 @@ while True:
     # prints invalid search input if search input is not "player" or "team"
     else:
         print("Invalid Search Input")
-    # asks user at the end if user wants to search again, if "No", then breaks
+    
+    # asks user at the end if user wants to search again, if "yes", then it continues looping, "no" causes the program to stop, and anything else will cause it to stop with a message.
     keep_going = input("Search again? (yes/no): ").lower()
     if keep_going == "yes":
         continue
