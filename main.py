@@ -67,5 +67,10 @@ while True:
         print("Invalid Search Input")
     # asks user at the end if user wants to search again, if "No", then breaks
     keep_going = input("Search again? (yes/no): ").lower()
-    if keep_going == "no":
+    if keep_going == "yes":
+        continue
+    elif keep_going == "no":
+        break
+    else:
+        print("Invalid input (Must be Yes or No.)")
         break
